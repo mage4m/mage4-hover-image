@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Mage4. All rights reserved.
+ * See MS-LICENSE.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="mage4_all" translate="label" sortOrder="50">
+            <label>Mage4</label>
+        </tab>
+        <section id="mage4_hover_image_catalog" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Hover Catalog Image</label>
+            <tab>mage4_all</tab>
+            <resource>Mage4_HoverImage::config_mage4_hover_image</resource>
+            <group id="general" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Hover Catalog Image</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
